@@ -1,0 +1,16 @@
+{
+  "name": "graphql-chat",
+  "version": "1.0.0",
+  "repository": "git@github.com:k1te-m/graphql-chat.git",
+  "author": "k1te <kmiller343@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn client\" \"yarn server\"",
+    "client": "cd client && yarn start",
+    "server": "cd server && yarn dev"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
